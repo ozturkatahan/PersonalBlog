@@ -1,0 +1,12 @@
+﻿using PersonalBlog.Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PersonalBlog.Entities.Dtos.ContactInfoDtos
+{
+    public class ContactInfoDto
+    {
+        public ContactInfo ContactInfo { get; set; }
+    }
+}
