@@ -1,0 +1,21 @@
+﻿using PersonalBlog.Service.Dtos.SkillsDtos;
+using PersonalBlog.Shared.Utilities.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PersonalBlog.Service.Abstract
+{
+    public interface ISkillsService
+    {
+        Task<IDataResult<SkillsDto>> Get(int id);
+        Task<IDataResult<SkillsListDto>> GetAll();
+        Task<IDataResult<SkillsListDto>> GetAllByNonDelete();
+        Task<IDataResult<SkillsListDto>> GetAllByNonDeleteAndActive();
+        Task<IDataResult<SkillsDto>> Add(SkillsAddDto skillsAddDto);
+        Task<IDataResult<SkillsDto>> Update(SkillsUpdateDto skillsUpdateDto);
+        Task<IResult> Delete(int id);
+        Task<IResult> HardDelete(int id);
+    }
+}

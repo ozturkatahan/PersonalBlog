@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersonalBlog.Data.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,9 +9,9 @@ namespace PersonalBlog.Data.Abstract
     public interface IUnitOfWork : IAsyncDisposable
     {
         ISummaryRepository Summary { get; }
-        ISocialMediaAccountRepository SociMediaAccounts { get; }
+        ISocialMediaAccountRepository SocialMediaAccounts { get; }
         ISkillsRepository Skills { get; }
-        ISiteIdentityRepository SiteIdentityRepository { get; }
+        ISiteIdentityRepository SiteIdentity { get; }
         IMessagesRepository Messages { get; }
         IInterestsRepository Interests { get; }
         IHomePageSlidersRepository HomePageSliders { get; }

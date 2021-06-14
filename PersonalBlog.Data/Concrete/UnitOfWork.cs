@@ -34,11 +34,11 @@ namespace PersonalBlog.Data.Concrete
 
         public ISummaryRepository Summary => _efSummaryRepository ?? new EfSummaryRepository(_context);
 
-        public ISocialMediaAccountRepository SociMediaAccounts => _efSocialMediaAccountsRepository ?? new EfSocialMediaAccountsRepository(_context);
+        public ISocialMediaAccountRepository SocialMediaAccounts => _efSocialMediaAccountsRepository ?? new EfSocialMediaAccountsRepository(_context);
 
         public ISkillsRepository Skills => _efSkillsRepository ?? new EfSkillsRepository(_context);
 
-        public ISiteIdentityRepository SiteIdentityRepository => _efSiteIdentityRepository ?? new EfSiteIdentityRepository(_context);
+        public ISiteIdentityRepository SiteIdentity => _efSiteIdentityRepository ?? new EfSiteIdentityRepository(_context);
 
         public IMessagesRepository Messages => _efMessagesRepository ?? new EfMessagesRepository(_context);
 

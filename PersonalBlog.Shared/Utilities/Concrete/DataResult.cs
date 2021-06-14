@@ -8,6 +8,13 @@ namespace PersonalBlog.Shared.Utilities.Concrete
 {
     public class DataResult<T> : IDataResult<T>
     {
+        private ResultStatus resultStatus;
+
+        public DataResult(ResultStatus resultStatus)
+        {
+            this.resultStatus = resultStatus;
+        }
+
         public DataResult(ResultStatus resultStatus, T data)
         {
             ResultStatus = resultStatus;
