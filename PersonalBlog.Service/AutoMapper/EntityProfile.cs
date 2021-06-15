@@ -23,6 +23,7 @@ namespace PersonalBlog.Service.AutoMapper
     {
         public EntityProfile()
         {
+            //ReverseMap : 2 taraflı yapmak için
             CreateMap<Summary, SummaryUpdateDto>().ReverseMap();
             CreateMap<Interests, InterestsAddDto>().ReverseMap();
             CreateMap<InterestsUpdateDto, Interests>().ReverseMap();
